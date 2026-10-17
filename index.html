@@ -27,86 +27,121 @@ src="https://www.facebook.com/tr?id=2566950463811596&ev=PageView&noscript=1"
   *{margin:0;padding:0;box-sizing:border-box;}
   body{font-family:'Segoe UI',Arial,sans-serif;color:#1a1a2e;background:#f7f8fc;line-height:1.6;}
   .container{max-width:820px;margin:0 auto;padding:0 20px;}
-  .highlight{background:linear-gradient(120deg,#ffe600 0%,#ffe600 100%);background-repeat:no-repeat;background-size:100% 40%;background-position:0 85%;padding:0 4px;}
-  .alert-bar{background:#d90429;color:#fff;text-align:center;padding:10px;font-weight:700;font-size:15px;letter-spacing:.3px;}
-  .alert-bar span{text-decoration:underline;}
-  .hero{background:#fff;padding:45px 0 35px;text-align:center;border-bottom:3px solid #ffd60a;}
-  .pre-headline{display:inline-block;background:#eef2ff;color:#3730a3;font-weight:700;font-size:13px;padding:6px 16px;border-radius:50px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px;}
-  h1{font-size:34px;line-height:1.25;font-weight:800;color:#0f172a;margin-bottom:18px;}
-  h1 .red{color:#d90429;}
-  .subhead{font-size:18px;color:#475569;max-width:640px;margin:0 auto 28px;}
+  
+  /* Cores Tecnológicas: Azul, Roxo e Ciano */
+  .alert-bar{background:linear-gradient(90deg, #1e3a8a, #6d28d9, #0891b2);color:#fff;text-align:center;padding:12px;font-weight:700;font-size:15px;letter-spacing:.5px;}
+  
+  .hero{background:#fff;padding:50px 0 40px;text-align:center;border-bottom:4px solid #6d28d9;}
+  .pre-headline{display:inline-block;background:#e0e7ff;color:#4338ca;font-weight:800;font-size:14px;padding:8px 20px;border-radius:50px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:22px;}
+  
+  /* Título Maior e Mais Expressivo */
+  h1{font-size:46px;line-height:1.15;font-weight:900;color:#0f172a;margin-bottom:22px;letter-spacing:-1px;}
+  h1 .red{background:linear-gradient(90deg, #6d28d9, #0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  
+  .subhead{font-size:19px;color:#475569;max-width:680px;margin:0 auto 30px;}
   .subhead b{color:#0f172a;}
-  .hero-img{max-width:100%;width:640px;height:auto;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.18);margin:0 auto 28px;display:block;}
-  .cta-btn{display:inline-block;background:linear-gradient(180deg,#22c55e 0%,#16a34a 100%);color:#fff !important;font-size:20px;font-weight:800;padding:20px 42px;border-radius:12px;text-decoration:none;box-shadow:0 8px 0 #0f7a35,0 12px 20px rgba(0,0,0,.25);transition:transform .15s ease,box-shadow .15s ease;text-transform:uppercase;letter-spacing:.5px;}
-  .cta-btn:hover{transform:translateY(2px);box-shadow:0 6px 0 #0f7a35,0 10px 16px rgba(0,0,0,.25);}
+  
+  .hero-img{max-width:100%;width:680px;height:auto;border-radius:16px;box-shadow:0 20px 40px rgba(109,40,217,.2);margin:0 auto 30px;display:block;border:2px solid #e2e8f0;}
+  
+  /* Botões CTA com Cores de Tecnologia */
+  .cta-btn{display:inline-block;background:linear-gradient(180deg,#8b5cf6 0%,#6d28d9 100%);color:#fff !important;font-size:20px;font-weight:800;padding:20px 42px;border-radius:12px;text-decoration:none;box-shadow:0 8px 0 #4c1d95,0 12px 20px rgba(109,40,217,.3);transition:transform .15s ease,box-shadow .15s ease;text-transform:uppercase;letter-spacing:.5px;border:1px solid #a78bfa;}
+  .cta-btn:hover{transform:translateY(2px);box-shadow:0 6px 0 #4c1d95,0 10px 16px rgba(109,40,217,.3);}
   .cta-btn.big{font-size:22px;padding:24px 52px;}
-  .cta-note{font-size:13px;color:#64748b;margin-top:14px;}
-  .section{padding:50px 0;}
-  .section.dark{background:#0f172a;color:#fff;}
+  .cta-note{font-size:14px;color:#64748b;margin-top:16px;font-weight:600;}
+  
+  .section{padding:55px 0;}
+  .section.dark{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);color:#fff;}
   .section.gray{background:#f1f5f9;}
-  h2{font-size:28px;font-weight:800;margin-bottom:20px;line-height:1.3;}
+  
+  h2{font-size:30px;font-weight:800;margin-bottom:22px;line-height:1.3;color:#0f172a;}
   .section.dark h2{color:#fff;}
+  
   p.lead{font-size:18px;color:#334155;margin-bottom:18px;}
   .section.dark p.lead{color:#cbd5e1;}
-  .pain-list{list-style:none;margin:20px 0;}
-  .pain-list li{background:#fff;border-left:5px solid #d90429;padding:14px 18px;margin-bottom:12px;border-radius:6px;font-size:16px;box-shadow:0 2px 6px rgba(0,0,0,.05);}
-  .section.dark .pain-list li{background:#1e293b;color:#e2e8f0;}
-  .pain-list li b{color:#d90429;}
-  .features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:25px 0;}
-  .feature{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:4px solid #22c55e;}
-  .feature h3{font-size:17px;margin-bottom:8px;color:#0f172a;}
-  .feature p{font-size:14px;color:#475569;}
-  .testimonial{background:#fff;padding:22px;border-radius:10px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-left:5px solid #ffd60a;}
-  .testimonial p{font-style:italic;color:#334155;margin-bottom:10px;}
-  .testimonial .author{font-weight:700;color:#0f172a;font-size:14px;}
-  .price-box{background:#fff;border:4px dashed #22c55e;border-radius:16px;padding:35px 25px;text-align:center;max-width:520px;margin:0 auto;box-shadow:0 10px 30px rgba(0,0,0,.1);}
-  .price-box .old{color:#94a3b8;text-decoration:line-through;font-size:20px;}
-  .price-box .now{font-size:48px;font-weight:900;color:#16a34a;line-height:1;}
-  .price-box .now small{font-size:18px;font-weight:700;color:#334155;display:block;margin-top:6px;}
-  .price-box .onetime{background:#fef3c7;color:#92400e;font-weight:800;font-size:13px;padding:6px 14px;border-radius:50px;display:inline-block;margin-bottom:14px;text-transform:uppercase;}
-  .price-box .lifetime{font-weight:700;color:#0f172a;margin:14px 0 20px;font-size:17px;}
-  .guarantee{background:#ecfdf5;border:2px solid #22c55e;border-radius:12px;padding:22px;text-align:center;margin-top:35px;}
-  .guarantee h3{color:#15803d;font-size:20px;margin-bottom:8px;}
-  .guarantee p{color:#166534;font-size:15px;}
-  .faq{background:#fff;border-radius:10px;padding:18px 22px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
-  .faq h3{font-size:16px;color:#0f172a;margin-bottom:6px;}
+  
+  .pain-list{list-style:none;margin:22px 0;}
+  .pain-list li{background:#fff;border-left:5px solid #6d28d9;padding:16px 20px;margin-bottom:14px;border-radius:8px;font-size:17px;box-shadow:0 4px 12px rgba(0,0,0,.04);}
+  .pain-list li b{color:#6d28d9;}
+  
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0;}
+  .feature{background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.05);border-top:4px solid #0891b2;transition:transform .2s;}
+  .feature:hover{transform:translateY(-3px);}
+  .feature h3{font-size:18px;margin-bottom:10px;color:#0f172a;}
+  .feature p{font-size:15px;color:#475569;}
+  
+  .testimonial{background:#fff;padding:24px;border-radius:12px;margin-bottom:18px;box-shadow:0 4px 15px rgba(0,0,0,.05);border-left:5px solid #6d28d9;}
+  .testimonial p{font-style:italic;color:#334155;margin-bottom:12px;font-size:16px;}
+  .testimonial .author{font-weight:800;color:#0f172a;font-size:15px;}
+  
+  /* Caixa de Preço */
+  .price-box{background:#fff;border:4px dashed #6d28d9;border-radius:20px;padding:40px 25px;text-align:center;max-width:520px;margin:0 auto;box-shadow:0 15px 35px rgba(109,40,217,.15);}
+  .price-box .old{color:#94a3b8;text-decoration:line-through;font-size:22px;}
+  .price-box .now{font-size:56px;font-weight:900;color:#6d28d9;line-height:1;}
+  .price-box .now small{font-size:20px;font-weight:700;color:#334155;display:block;margin-top:8px;}
+  .price-box .onetime{background:#e0e7ff;color:#4338ca;font-weight:900;font-size:14px;padding:8px 18px;border-radius:50px;display:inline-block;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
+  .price-box .lifetime{font-weight:800;color:#0f172a;margin:16px 0 24px;font-size:18px;}
+  
+  /* Garantia com Imagem */
+  .guarantee{background:#f8fafc;border:2px solid #6d28d9;border-radius:16px;padding:30px 22px;text-align:center;margin-top:40px;box-shadow:0 10px 25px rgba(0,0,0,.05);}
+  .guarantee img{max-width:320px;width:100%;height:auto;margin:0 auto 15px;display:block;}
+  .guarantee h3{color:#6d28d9;font-size:22px;margin-bottom:10px;}
+  .guarantee p{color:#334155;font-size:16px;max-width:600px;margin:0 auto;}
+  
+  .faq{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.04);border-left:3px solid #0891b2;}
+  .faq h3{font-size:17px;color:#0f172a;margin-bottom:8px;}
   .faq p{font-size:15px;color:#475569;}
-  .final-cta{background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;text-align:center;padding:60px 20px;}
-  .final-cta h2{color:#ffd60a;font-size:30px;}
-  .final-cta p{color:#cbd5e1;font-size:17px;max-width:600px;margin:0 auto 28px;}
-  .urgency{background:#d90429;color:#fff;display:inline-block;padding:8px 20px;border-radius:50px;font-weight:800;font-size:14px;margin-bottom:20px;animation:pulse 1.5s infinite;}
-  @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
-  .stars{color:#fbbf24;font-size:20px;letter-spacing:2px;margin-bottom:8px;}
-  .social-proof{font-size:14px;color:#64748b;margin-top:10px;}
-  footer{text-align:center;padding:25px;font-size:12px;color:#94a3b8;background:#fff;}
+  
+  .final-cta{background:linear-gradient(135deg,#0f172a 0%,#2e1065 100%);color:#fff;text-align:center;padding:70px 20px;}
+  .final-cta h2{color:#fff;font-size:34px;}
+  .final-cta h2 .red{background:linear-gradient(90deg, #a78bfa, #22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .final-cta p{color:#cbd5e1;font-size:18px;max-width:650px;margin:0 auto 30px;}
+  
+  .urgency{background:linear-gradient(90deg,#6d28d9,#0891b2);color:#fff;display:inline-block;padding:10px 24px;border-radius:50px;font-weight:800;font-size:15px;margin-bottom:25px;animation:pulse 1.5s infinite;box-shadow:0 4px 15px rgba(109,40,217,.4);}
+  @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}
+  
+  .stars{color:#a78bfa;font-size:24px;letter-spacing:3px;margin-bottom:10px;}
+  .social-proof{font-size:15px;color:#64748b;margin-top:12px;font-weight:600;}
+  footer{text-align:center;padding:30px;font-size:13px;color:#94a3b8;background:#fff;border-top:1px solid #e2e8f0;}
+  
+  /* Imagem de Transição (Logos) */
+  .transition-img{max-width:100%;height:auto;display:block;margin:40px auto 0;opacity:0.85;filter:grayscale(20%);}
+  
   @media(max-width:600px){
-    h1{font-size:26px;} h2{font-size:23px;} .cta-btn{font-size:17px;padding:18px 28px;} .cta-btn.big{font-size:18px;padding:20px 30px;}
-    .features{grid-template-columns:1fr;} .price-box .now{font-size:38px;}
+    h1{font-size:32px;} h2{font-size:24px;} .cta-btn{font-size:17px;padding:18px 28px;} .cta-btn.big{font-size:18px;padding:20px 30px;}
+    .features{grid-template-columns:1fr;} .price-box .now{font-size:42px;}
   }
 </style>
 </head>
 <body>
 
-<!-- URGENCY BAR -->
-<div class="alert-bar">⚡ LIMITED-TIME OFFER — One-time price of <span>$297</span> (was $697/yr). No monthly fees. Lifetime access.</div>
+<!-- BARRA DE URGÊNCIA SUAVIZADA (Preço removido) -->
+<div class="alert-bar">⚡ LIMITED-TIME OFFER — No monthly fees. Lifetime access.</div>
 
 <!-- HERO -->
 <header class="hero">
   <div class="container">
     <span class="pre-headline">🤖 Powered by A.I. — Trusted by 10,000+ Users</span>
-    <h1>Stop Paying Designers. Create <span class="red">Pro-Level Graphics in Minutes</span> with Artificial Intelligence — Even if You Suck at Design.</h1>
+    <h1>Stop Paying Designers. Create <span class="red">Pro-Level Graphics</span> in Minutes with AI.</h1>
     <p class="subhead">The all-in-one suite that replaces Canva Pro, Photoshop and Fiverr freelancers with a <b>one-time payment</b>. 7,293+ ready-made templates, an AI image creator, and commercial license included.</p>
 
-    <!-- HERO IMAGE -->
+    <!-- IMAGEM 01: Substituindo a imagem anterior. 
+         IMPORTANTE: Troque "Imagem01.jpg" pelo link real da sua imagem hospedada. -->
     <img class="hero-img"
-         src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
-         alt="AI-powered graphic design workspace with futuristic interface">
+         src="Imagem01.jpg"
+         alt="AI Graphic Design Interface">
 
     <a href="https://jvz8.com/c/3627845/387960/"
        class="cta-btn big"
        target="_blank" rel="noopener"
-       onclick="fbq('track', 'InitiateCheckout');">✅ GET MY LIFETIME ACCESS NOW</a>
+       onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY LIFETIME ACCESS NOW</a>
+    
     <div class="cta-note">🔒 100% secure checkout • 30-day money-back guarantee • Instant access</div>
+
+    <!-- IMAGEM 02: Logos de integração/ferramentas (transição para a próxima seção). 
+         IMPORTANTE: Troque "Imagem02.png" pelo link real da sua imagem hospedada. -->
+    <img class="transition-img"
+         src="Imagem02.png"
+         alt="Integrates with all major platforms">
   </div>
 </header>
 
@@ -181,11 +216,14 @@ src="https://www.facebook.com/tr?id=2566950463811596&ev=PageView&noscript=1"
       <a href="https://jvz8.com/c/3627845/387960/"
          class="cta-btn big"
          target="_blank" rel="noopener"
-         onclick="fbq('track', 'InitiateCheckout');">🚀 YES! I WANT LIFETIME ACCESS FOR $297</a>
+         onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY LIFETIME ACCESS NOW</a>
       <div class="cta-note">🔒 Secure checkout • 30-day money-back guarantee</div>
     </div>
 
+    <!-- GARANTIA COM IMAGEM 03 -->
     <div class="guarantee">
+      <!-- IMPORTANTE: Troque "Imagem03.png" pelo link real da sua imagem hospedada. -->
+      <img src="Imagem03.png" alt="30-Day Money Back Guarantee">
       <h3>🛡️ 30-Day Money-Back Guarantee</h3>
       <p>Try everything for 30 days. If you're not 100% satisfied for any reason, just send an email and we'll refund every penny. No questions, no hassle. All the risk is on us.</p>
     </div>
@@ -208,7 +246,7 @@ src="https://www.facebook.com/tr?id=2566950463811596&ev=PageView&noscript=1"
 <section class="final-cta">
   <div class="container">
     <div class="urgency">⏰ LIMITED-TIME OFFER — $297 (WAS $697)</div>
-    <h2>You're One Click Away From Never Depending on a Designer Again</h2>
+    <h2>You're One Click Away From Never Depending on a Designer <span class="red">Again</span></h2>
     <p>While you're thinking, your competitors are creating AI-powered graphics and closing the sales that could have been yours. Lock in lifetime access now — with a 30-day guarantee.</p>
     <div class="stars">★★★★★</div>
     <p class="social-proof" style="color:#cbd5e1;">Trusted by 10,000+ active users • Average rating 4.9/5</p>
@@ -216,7 +254,7 @@ src="https://www.facebook.com/tr?id=2566950463811596&ev=PageView&noscript=1"
     <a href="https://jvz8.com/c/3627845/387960/"
        class="cta-btn big"
        target="_blank" rel="noopener"
-       onclick="fbq('track', 'InitiateCheckout');">👉 GET MY LIFETIME ACCESS NOW</a>
+       onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY LIFETIME ACCESS NOW</a>
     <div class="cta-note" style="color:#94a3b8;margin-top:16px;">🔒 100% secure environment • Instant access after payment</div>
   </div>
 </section>
