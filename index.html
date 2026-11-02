@@ -3,263 +3,482 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🚨 Stop Paying Designers! Create Pro Graphics in Minutes with AI</title>
+<title>Event SUMMIT — SuperPlug AI Video & Automation Tool</title>
+<meta name="description" content="Discover SuperPlug AI: The ultimate AI video generator and automation tool to create viral videos, graphics, and high-converting content effortlessly.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2566950463811596');
-fbq('track', 'PageView');
+<!-- ============================================
+     FAVICON (SVG Embutido)
+============================================ -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a1128'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='900' text-anchor='middle' fill='%23FF6B00'%3EE%3C/text%3E%3C/svg%3E">
+
+<!-- ============================================
+     SCHEMA MARKUP (JSON-LD - FAQPage para SEO)
+============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does AI video generation work with SuperPlug AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SuperPlug AI connects powerful models like ChatGPT, Claude, and ElevenLabs to automatically write scripts, generate voiceovers, and produce stunning videos and thumbnails in minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use SuperPlug AI to create YouTube, TikTok, and Instagram videos without showing my face?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, SuperPlug AI specializes infaceless video creation, automated video editing, templates, and dynamic captions designed for maximum engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What other tools and integrations does SuperPlug AI support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SuperPlug AI integrates with major platforms like Replicate, Stability AI, OpenRouter, Mailchimp, GetResponse, Zapier, Make, and Discord for full workflow automation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SuperPlug AI beginner-friendly for content creators and marketers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. You do not need video editing skills or technical knowledge. The intuitive interface lets anyone launch viral video campaigns with simple prompts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there monthly subscription fees for SuperPlug AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During this exclusive launch phase, Founding Members can secure VIP lifetime access with a special offer, avoiding recurring monthly fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use the videos and graphics created with SuperPlug AI for commercial projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all content generated through SuperPlug AI includes full commercial rights, allowing you to monetize videos on social media or sell services to clients."
+      }
+    }
+  ]
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2566950463811596&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Segoe UI',Arial,sans-serif;color:#1a1a2e;background:#f7f8fc;line-height:1.6;}
-  .container{max-width:820px;margin:0 auto;padding:0 20px;}
-  
-  /* Cores Tecnológicas: Azul, Roxo e Ciano */
-  .alert-bar{background:linear-gradient(90deg, #1e3a8a, #6d28d9, #0891b2);color:#fff;text-align:center;padding:12px;font-weight:700;font-size:15px;letter-spacing:.5px;}
-  
-  .hero{background:#fff;padding:50px 0 40px;text-align:center;border-bottom:4px solid #6d28d9;}
-  .pre-headline{display:inline-block;background:#e0e7ff;color:#4338ca;font-weight:800;font-size:14px;padding:8px 20px;border-radius:50px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:22px;}
-  
-  /* Título Maior e Mais Expressivo */
-  h1{font-size:46px;line-height:1.15;font-weight:900;color:#0f172a;margin-bottom:22px;letter-spacing:-1px;}
-  h1 .red{background:linear-gradient(90deg, #6d28d9, #0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-  
-  .subhead{font-size:19px;color:#475569;max-width:680px;margin:0 auto 30px;}
-  .subhead b{color:#0f172a;}
-  
-  .hero-img{max-width:100%;width:680px;height:auto;border-radius:16px;box-shadow:0 20px 40px rgba(109,40,217,.2);margin:0 auto 30px;display:block;border:2px solid #e2e8f0;}
-  
-  /* Botões CTA com Cores de Tecnologia */
-  .cta-btn{display:inline-block;background:linear-gradient(180deg,#8b5cf6 0%,#6d28d9 100%);color:#fff !important;font-size:20px;font-weight:800;padding:20px 42px;border-radius:12px;text-decoration:none;box-shadow:0 8px 0 #4c1d95,0 12px 20px rgba(109,40,217,.3);transition:transform .15s ease,box-shadow .15s ease;text-transform:uppercase;letter-spacing:.5px;border:1px solid #a78bfa;}
-  .cta-btn:hover{transform:translateY(2px);box-shadow:0 6px 0 #4c1d95,0 10px 16px rgba(109,40,217,.3);}
-  .cta-btn.big{font-size:22px;padding:24px 52px;}
-  .cta-note{font-size:14px;color:#64748b;margin-top:16px;font-weight:600;}
-  
-  .section{padding:55px 0;}
-  .section.dark{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);color:#fff;}
-  .section.gray{background:#f1f5f9;}
-  
-  h2{font-size:30px;font-weight:800;margin-bottom:22px;line-height:1.3;color:#0f172a;}
-  .section.dark h2{color:#fff;}
-  
-  p.lead{font-size:18px;color:#334155;margin-bottom:18px;}
-  .section.dark p.lead{color:#cbd5e1;}
-  
-  .pain-list{list-style:none;margin:22px 0;}
-  .pain-list li{background:#fff;border-left:5px solid #6d28d9;padding:16px 20px;margin-bottom:14px;border-radius:8px;font-size:17px;box-shadow:0 4px 12px rgba(0,0,0,.04);}
-  .pain-list li b{color:#6d28d9;}
-  
-  .features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0;}
-  .feature{background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.05);border-top:4px solid #0891b2;transition:transform .2s;}
-  .feature:hover{transform:translateY(-3px);}
-  .feature h3{font-size:18px;margin-bottom:10px;color:#0f172a;}
-  .feature p{font-size:15px;color:#475569;}
-  
-  .testimonial{background:#fff;padding:24px;border-radius:12px;margin-bottom:18px;box-shadow:0 4px 15px rgba(0,0,0,.05);border-left:5px solid #6d28d9;}
-  .testimonial p{font-style:italic;color:#334155;margin-bottom:12px;font-size:16px;}
-  .testimonial .author{font-weight:800;color:#0f172a;font-size:15px;}
-  
-  /* Caixa de Preço */
-  .price-box{background:#fff;border:4px dashed #6d28d9;border-radius:20px;padding:40px 25px;text-align:center;max-width:520px;margin:0 auto;box-shadow:0 15px 35px rgba(109,40,217,.15);}
-  .price-box .old{color:#94a3b8;text-decoration:line-through;font-size:22px;}
-  .price-box .now{font-size:56px;font-weight:900;color:#6d28d9;line-height:1;}
-  .price-box .now small{font-size:20px;font-weight:700;color:#334155;display:block;margin-top:8px;}
-  .price-box .onetime{background:#e0e7ff;color:#4338ca;font-weight:900;font-size:14px;padding:8px 18px;border-radius:50px;display:inline-block;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;}
-  .price-box .lifetime{font-weight:800;color:#0f172a;margin:16px 0 24px;font-size:18px;}
-  
-  /* Garantia com Imagem */
-  .guarantee{background:#f8fafc;border:2px solid #6d28d9;border-radius:16px;padding:30px 22px;text-align:center;margin-top:40px;box-shadow:0 10px 25px rgba(0,0,0,.05);}
-  .guarantee img{max-width:320px;width:100%;height:auto;margin:0 auto 15px;display:block;}
-  .guarantee h3{color:#6d28d9;font-size:22px;margin-bottom:10px;}
-  .guarantee p{color:#334155;font-size:16px;max-width:600px;margin:0 auto;}
-  
-  .faq{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.04);border-left:3px solid #0891b2;}
-  .faq h3{font-size:17px;color:#0f172a;margin-bottom:8px;}
-  .faq p{font-size:15px;color:#475569;}
-  
-  .final-cta{background:linear-gradient(135deg,#0f172a 0%,#2e1065 100%);color:#fff;text-align:center;padding:70px 20px;}
-  .final-cta h2{color:#fff;font-size:34px;}
-  .final-cta h2 .red{background:linear-gradient(90deg, #a78bfa, #22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-  .final-cta p{color:#cbd5e1;font-size:18px;max-width:650px;margin:0 auto 30px;}
-  
-  .urgency{background:linear-gradient(90deg,#6d28d9,#0891b2);color:#fff;display:inline-block;padding:10px 24px;border-radius:50px;font-weight:800;font-size:15px;margin-bottom:25px;animation:pulse 1.5s infinite;box-shadow:0 4px 15px rgba(109,40,217,.4);}
-  @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}
-  
-  .stars{color:#a78bfa;font-size:24px;letter-spacing:3px;margin-bottom:10px;}
-  .social-proof{font-size:15px;color:#64748b;margin-top:12px;font-weight:600;}
-  footer{text-align:center;padding:30px;font-size:13px;color:#94a3b8;background:#fff;border-top:1px solid #e2e8f0;}
-  
-  /* Imagem de Transição (Logos) */
-  .transition-img{max-width:100%;height:auto;display:block;margin:40px auto 0;opacity:0.85;filter:grayscale(20%);}
-  
-  @media(max-width:600px){
-    h1{font-size:32px;} h2{font-size:24px;} .cta-btn{font-size:17px;padding:18px 28px;} .cta-btn.big{font-size:18px;padding:20px 30px;}
-    .features{grid-template-columns:1fr;} .price-box .now{font-size:42px;}
+  /* ============================================
+     RESET E BASE
+  ============================================ */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333333;
+    background: #ffffff;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  /* ============================================
+     IMAGENS RESPONSIVAS
+  ============================================ */
+  .img-responsive {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1c2d5a, #0a1128);
+    min-height: 260px;
+    object-fit: cover;
+  }
+
+  /* ============================================
+     BLOCO 1 — HERO (AZUL ESCURO METÁLICO)
+  ============================================ */
+  .hero {
+    background: linear-gradient(135deg, #0a1128 0%, #1c2d5a 50%, #0d1b3e 100%);
+    padding: 40px 0 80px;
+    text-align: center;
+  }
+  .brand {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .brand .event { color: #ffffff; }
+  .brand .summit { color: #FF6B00; }
+
+  .preheadline {
+    display: inline-block;
+    background: #222222;
+    color: #FF3333;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 8px;
+    margin-bottom: 28px;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+  }
+
+  .hero h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero .subtitle {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    margin-bottom: 40px;
+  }
+
+  /* ============================================
+     BOTÕES CTA (VERDE FLUORESCENTE + HOVER SHEEN)
+  ============================================ */
+  .cta-btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: #00E676;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 18px 36px;
+    border-radius: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,230,118,0.35);
+    max-width: 100%;
+    margin: 12px auto;
+  }
+  .cta-btn::after {
+    content: "";
+    position: absolute;
+    top: 0; left: -75%;
+    width: 50%; height: 100%;
+    background: linear-gradient(120deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.75) 50%,
+      rgba(255,255,255,0) 100%);
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+    pointer-events: none;
+  }
+  .cta-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,255,102,0.4);
+    background: #00FF66;
+  }
+  .cta-btn:hover::after { left: 125%; }
+  .cta-btn:active { transform: translateY(-1px) scale(1.0); }
+
+  /* ============================================
+     BLOCO 2 — TRANSIÇÃO AZUL CLARO (IMAGEM 02)
+  ============================================ */
+  .transition-block {
+    background: #f0f4f8;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  /* ============================================
+     BLOCO 3 — CORPO (FUNDO BRANCO)
+  ============================================ */
+  .body-section {
+    background: #ffffff;
+    padding: 70px 0 60px;
+    text-align: center;
+  }
+
+  .qa-block { margin-bottom: 42px; }
+
+  .qa-block .question {
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .qa-block .answer {
+    color: #333333;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .highlight-text {
+    color: #000000;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin: 55px auto;
+    max-width: 820px;
+    letter-spacing: -0.4px;
+  }
+
+  .body-section .cta-btn { margin: 40px auto 30px; }
+
+  .body-image {
+    margin: 50px auto 30px;
+  }
+
+  /* ============================================
+     RODAPÉ
+  ============================================ */
+  footer {
+    background: #222222;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  footer .footer-links { margin-top: 14px; }
+  footer .footer-links a {
+    color: #AAAAAA;
+    text-decoration: underline;
+    margin: 0 10px;
+    transition: color 0.2s ease;
+  }
+  footer .footer-links a:hover { color: #ffffff; }
+
+  /* ============================================
+     RESPONSIVO (MOBILE)
+  ============================================ */
+  @media (max-width: 768px) {
+    .brand { font-size: 20px; }
+    .preheadline { font-size: 14px; padding: 9px 16px; }
+    .hero h1 { font-size: 32px; }
+    .hero .subtitle { font-size: 18px; }
+    .cta-btn {
+      font-size: 18px;
+      padding: 16px 20px;
+      width: 100%;
+      max-width: 100%;
+    }
+    .qa-block .question,
+    .qa-block .answer { font-size: 18px; }
+    .highlight-text { font-size: 28px; }
+    .hero { padding: 30px 0 60px; }
+    .transition-block { padding: 40px 0; }
+    .body-section { padding: 50px 0 40px; }
+    .img-responsive { min-height: 180px; }
   }
 </style>
 </head>
 <body>
 
-<!-- BARRA DE URGÊNCIA SUAVIZADA -->
-<div class="alert-bar">⚡ LIMITED-TIME OFFER — No monthly fees. Lifetime access.</div>
+  <!-- ============================================
+       BLOCO 1 — TOPO / HERO
+  ============================================ -->
+  <section class="hero">
+    <div class="container">
 
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <span class="pre-headline">🤖 Powered by A.I. — Trusted by 10,000+ Users</span>
-    <h1>Stop Paying Designers. Create <span class="red">Pro-Level Graphics</span> in Minutes with AI.</h1>
-    <p class="subhead">The all-in-one suite that replaces Canva Pro, Photoshop and Fiverr freelancers with a <b>one-time payment</b>. 7,293+ ready-made templates, an AI image creator, and commercial license included.</p>
+      <div class="brand">
+        <span class="event">Event</span> <span class="summit">SUMMIT</span>
+      </div>
 
-    <!-- IMAGEM 01 -->
-    <img class="hero-img"
-         src="https://raw.githubusercontent.com/eventsummit/design-ai/main/Imagem-01.png"
-         alt="AI Graphic Design Interface">
+      <div class="preheadline">
+        NEXT-GEN AI VIDEO CREATION & AUTOMATION SUITE
+      </div>
 
-    <a href="https://jvz8.com/c/3627845/387960/"
-       class="cta-btn big"
-       target="_blank" rel="noopener"
-       onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY LIFETIME ACCESS NOW</a>
-    
-    <div class="cta-note">🔒 100% secure checkout • 30-day money-back guarantee • Instant access</div>
+      <h1>AUTOMATE VIRAL VIDEO CREATION & CONTENT SCALING WITH SUPERPLUG AI</h1>
 
-    <!-- IMAGEM 02 -->
-    <img class="transition-img"
-         src="https://raw.githubusercontent.com/eventsummit/design-ai/main/Imagem-02.png"
-         alt="Integrates with all major platforms">
-  </div>
-</header>
+      <p class="subtitle">
+        Connect ChatGPT, Claude, ElevenLabs, and Stability AI to Generate Engaging Videos, Thumbnails, and High-Converting Marketing Campaigns in Seconds.
+      </p>
 
-<!-- PAIN -->
-<section class="section">
-  <div class="container">
-    <h2>If You Identify With Any of These, Today Is Your Lucky Day…</h2>
-    <ul class="pain-list">
-      <li>❌ You <b>waste hours</b> trying to make a good-looking graphic — and it still looks amateur.</li>
-      <li>❌ You pay <b>expensive monthly fees</b> for Canva Pro, Photoshop, or a Fiverr freelancer for every single design.</li>
-      <li>❌ You're <b>held hostage by designers</b>, waiting days for a cover, mockup or sales banner.</li>
-      <li>❌ You know a pro design <b>multiplies your sales</b>, but you don't have the time or the skill.</li>
-      <li>❌ You've tried "easy" tools that promise everything and deliver <b>ugly, limited templates</b>.</li>
-    </ul>
-    <p class="lead"><b>The truth is simple:</b> your competitors are closing sales with pages and ads that look irresistible — while you're still stuck staring at a blank editor screen.</p>
-  </div>
-</section>
+      <!-- Imagem 01 - Hero -->
+      <img
+        class="img-responsive hero-image"
+        src="Imagem-01.jpg"
+        alt="SuperPlug AI Video Creation Laptop Interface with YouTube Templates"
+      >
 
-<!-- TURN -->
-<section class="section dark">
-  <div class="container">
-    <h2>Introducing: ClickDesigns™ — The AI-Powered Design Suite That Does the Heavy Lifting For You</h2>
-    <p class="lead">This isn't "another Canva." It's a complete ecosystem with <b>built-in Artificial Intelligence</b> that creates pro-level images, headlines, CTAs and mockups in just a few clicks — and you get a <b>commercial license</b> to sell everything you create.</p>
-    <div class="features">
-      <div class="feature"><h3>🖼️ A.I. Image Creator</h3><p>Generate stunning, high-quality images tailored to your brand, social media and campaigns — no generic stock photos.</p></div>
-      <div class="feature"><h3>✍️ A.I. Content Writer</h3><p>High-converting headlines, CTAs, taglines, bullets and paragraphs written by AI trained on direct-response copy.</p></div>
-      <div class="feature"><h3>📦 7,293+ Templates</h3><p>Logos, boxshots, eCovers, mockups, bundles, funnel graphics — all done-for-you and 100% editable.</p></div>
-      <div class="feature"><h3>📱 200+ Realistic Mockups</h3><p>Hand-held devices, outdoor banners, digital devices and photo-realistic environments ready to use.</p></div>
-      <div class="feature"><h3>🎨 1M+ Assets</h3><p>Royalty-free photos, icons, illustrations, 3D shapes, emojis and elements included.</p></div>
-      <div class="feature"><h3>💼 Commercial License</h3><p>Sell the designs you create. Make graphics for clients and get paid — at no extra cost.</p></div>
+      <!-- Botão de Direcionamento 01 -->
+      <a
+        href="https://jvz1.com/c/3627845/454665/"
+        class="cta-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YES, I WANT TO CREATE VIRAL AI VIDEOS NOW
+      </a>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SOCIAL PROOF -->
-<section class="section gray">
-  <div class="container">
-    <h2>Once You Use It, You'll Never Go Back 👇</h2>
-    <div class="testimonial">
-      <p>"ClickDesigns is the best piece of software in my arsenal. I used to spend tons of money on Fiverr for book covers and mockups. Now I create exactly what I want without spending a fortune. It saves me both money and time."</p>
-      <div class="author">— John Hooks</div>
+  <!-- ============================================
+       BLOCO 2 — TRANSIÇÃO AZUL CLARO (IMAGEM 02)
+  ============================================ -->
+  <section class="transition-block">
+    <div class="container">
+      <!-- Imagem 02 -->
+      <img
+        class="img-responsive"
+        src="Imagem-02.png"
+        alt="SuperPlug AI Integrations with OpenRouter, Stability AI, Replicate, Mailchimp, and Zapier"
+      >
     </div>
-    <div class="testimonial">
-      <p>"I use ClickDesigns for everything. Some of the best money I've ever spent — and very affordable."</p>
-      <div class="author">— Ron Haddock</div>
-    </div>
-    <div class="testimonial">
-      <p>"Generated $50,000+ extra in sales! 100x ROI! You'd be crazy not to get it!"</p>
-      <div class="author">— Anthony McCarthy</div>
-    </div>
-    <div class="testimonial">
-      <p>"Built for marketers with ALL the graphics you need. No more monthly fees from Canva Pro or Photoshop!"</p>
-      <div class="author">— Angie Norris</div>
-    </div>
-    <div class="testimonial">
-      <p>"Previously we wasted hours waiting on designers. Now my entire team — even those who've never designed before — creates stunning graphics in just a few clicks."</p>
-      <div class="author">— Mike Filsaime, CEO Groove Digital</div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- OFFER -->
-<section class="section">
-  <div class="container" style="text-align:center;">
-    <h2>Lock In Lifetime Access Today — One-Time Payment</h2>
-    <p class="lead" style="margin-bottom:30px;">While other tools charge you <b>forever on a monthly plan</b>, ClickDesigns is yours to keep today with <b>a single payment</b>.</p>
-    <div class="price-box">
-      <span class="onetime">💥 Special one-time price</span><br>
-      <span class="old">$697/year</span>
-      <div class="now">$297<small>One-time payment</small></div>
-      <p class="lifetime">✅ Pay once. Use forever.<br>✅ No renewals. No surprises.</p>
-      <a href="https://jvz8.com/c/3627845/387960/"
-         class="cta-btn big"
-         target="_blank" rel="noopener"
-         onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY LIFETIME ACCESS NOW</a>
-      <div class="cta-note">🔒 Secure checkout • 30-day money-back guarantee</div>
+  <!-- ============================================
+       BLOCO 3 — CORPO (FUNDO BRANCO)
+  ============================================ -->
+  <section class="body-section">
+    <div class="container">
+
+      <!-- P01 -->
+      <div class="qa-block">
+        <p class="question">How does AI-powered video generation work with SuperPlug AI?</p>
+        <p class="answer">
+          SuperPlug AI unifies leading AI models—including ChatGPT, Claude, Grok, ElevenLabs, and Stability AI—into a single hub. It automates video scripting, voiceover generation, visual editing, and thumbnail creation without requiring complex manual workflows.
+        </p>
+      </div>
+
+      <!-- P02 -->
+      <div class="qa-block">
+        <p class="question">Can I use SuperPlug AI to create YouTube, TikTok, and Instagram videos without showing my face?</p>
+        <p class="answer">
+          Absolutely! SuperPlug AI is designed for faceless video channels. You can generate engaging viral shorts, video ads, travel vlogs, educational tutorials, and lifestyle content complete with captions, voiceovers, and dynamic templates.
+        </p>
+      </div>
+
+      <!-- P03 -->
+      <div class="qa-block">
+        <p class="question">What other tools and integrations does SuperPlug AI support?</p>
+        <p class="answer">
+          Beyond video creation, SuperPlug AI seamlessly connects with automation bridges like Zapier and Make, CRM systems like Mailchimp and GetResponse, as well as Google Sheets, Slack, Notion, and Discord for end-to-end content publishing.
+        </p>
+      </div>
+
+      <!-- Botão de Direcionamento 02 -->
+      <a
+        href="https://jvz1.com/c/3627845/454665/"
+        class="cta-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CLAIM YOUR VIP ACCESS TO SUPERPLUG AI TODAY
+      </a>
+
+      <!-- Texto em Destaque do Meio (tamanho H1) -->
+      <h2 class="highlight-text">
+        CONNECT YOUR FAVORITE AI MODELS AND AUTOMATE YOUR CONTENT CREATION EMPIRE ON AUTOPILOT
+      </h2>
+
+      <!-- P04 -->
+      <div class="qa-block">
+        <p class="question">Is SuperPlug AI beginner-friendly for content creators and marketers?</p>
+        <p class="answer">
+          Yes! You don't need video editing experience or technical expertise. The intuitive point-and-click interface lets you select templates, plug in your topic, and generate publish-ready videos in just a few minutes.
+        </p>
+      </div>
+
+      <!-- P05 -->
+      <div class="qa-block">
+        <p class="question">Are there monthly subscription fees for SuperPlug AI?</p>
+        <p class="answer">
+          During this exclusive world premiere launch, you can lock in Founding Member VIP access with a special lifetime deal, eliminating costly recurring monthly fees.
+        </p>
+      </div>
+
+      <!-- P06 -->
+      <div class="qa-block">
+        <p class="question">Can I use the videos and graphics created with SuperPlug AI for commercial projects?</p>
+        <p class="answer">
+          Yes, all video content, graphics, and email campaigns created through SuperPlug AI come with full commercial usage rights. You can monetize them on YouTube and social networks or sell video creation services directly to clients.
+        </p>
+      </div>
+
+      <!-- Botão de Direcionamento 03 -->
+      <a
+        href="https://jvz1.com/c/3627845/454665/"
+        class="cta-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GET INSTANT ACCESS TO SUPERPLUG AI NOW
+      </a>
+
+      <!-- Imagem 03 -->
+      <img
+        class="img-responsive body-image"
+        src="Imagem-03.jpg"
+        alt="SuperPlug AI Central Hub Architecture and Connected Services"
+      >
+
+      <!-- Imagem 04 -->
+      <img
+        class="img-responsive body-image"
+        src="Imagem-04.jpg"
+        alt="SuperPlug AI Founding Member VIP Seats Special Offer"
+      >
+
+      <!-- Botão de Direcionamento 04 -->
+      <a
+        href="https://jvz1.com/c/3627845/454665/"
+        class="cta-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SECURE YOUR FOUNDING MEMBER VIP SEAT NOW
+      </a>
+
     </div>
+  </section>
 
-    <!-- GARANTIA COM IMAGEM 03 -->
-    <div class="guarantee">
-      <img src="https://raw.githubusercontent.com/eventsummit/design-ai/main/Imagem-03.png" alt="30-Day Money Back Guarantee">
-      <h3>🛡️ 30-Day Money-Back Guarantee</h3>
-      <p>Try everything for 30 days. If you're not 100% satisfied for any reason, just send an email and we'll refund every penny. No questions, no hassle. All the risk is on us.</p>
+  <!-- ============================================
+       RODAPÉ
+  ============================================ -->
+  <footer>
+    <div class="container">
+      <p>Copyright @ Event SUMMIT / Todos os direitos autorais reservados</p>
+      <p>
+        Protegido por todas as leis possíveis. Se você tentar copiar, vamos atrás da sua família. No estilo Liam Neeson.
+      </p>
+      <p class="footer-links">
+        <a href="#">Termos de Uso</a> /
+        <a href="#">Políticas de Privacidade</a>
+      </p>
     </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section gray">
-  <div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq"><h3>Do I need design skills to use this?</h3><p>No. ClickDesigns was built specifically for non-designers. Pick a template, customize it, and done — in minutes.</p></div>
-    <div class="faq"><h3>Is it really a one-time payment?</h3><p>Yes. Lifetime access is a single $297 payment. No monthly fees and no renewals.</p></div>
-    <div class="faq"><h3>Can I sell the designs I create?</h3><p>Yes! The commercial license is included. You can create graphics for clients and get paid for them.</p></div>
-    <div class="faq"><h3>Does it work for content creators and affiliates?</h3><p>Absolutely. YouTube thumbnails, ad creatives, product mockups, e-book covers — all in one place.</p></div>
-    <div class="faq"><h3>What if I don't like it?</h3><p>You have a full 30-day guarantee. Just request a refund and get 100% of your money back.</p></div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final-cta">
-  <div class="container">
-    <div class="urgency">⏰ LIMITED-TIME OFFER — $297 (WAS $697)</div>
-    <h2>You're One Click Away From Never Depending on a Designer <span class="red">Again</span></h2>
-    <p>While you're thinking, your competitors are creating AI-powered graphics and closing the sales that could have been yours. Lock in lifetime access now — with a 30-day guarantee.</p>
-    <div class="stars">★★★★★</div>
-    <p class="social-proof" style="color:#cbd5e1;">Trusted by 10,000+ active users • Average rating 4.9/5</p>
-    <br>
-    <a href="https://jvz8.com/c/3627845/387960/"
-       class="cta-btn big"
-       target="_blank" rel="noopener"
-       onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY LIFETIME ACCESS NOW</a>
-    <div class="cta-note" style="color:#94a3b8;margin-top:16px;">🔒 100% secure environment • Instant access after payment</div>
-  </div>
-</section>
-
-<footer>
-  <p>This site is an affiliate recommendation page. Results may vary. ClickDesigns™ is a trademark of its respective owners.</p>
-  <p style="margin-top:6px;">© 2026 — All rights reserved.</p>
-</footer>
+  </footer>
 
 </body>
 </html>
